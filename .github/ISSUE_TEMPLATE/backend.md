@@ -1,6 +1,6 @@
 ---
 name: backend
-description: issue template for backend issues
+about: issue template for backend issues
 title: ''
 labels: ''
 assignees: ''

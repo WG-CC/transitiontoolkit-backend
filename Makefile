@@ -9,7 +9,7 @@ ifeq ($(OS), Windows_NT)
 	PY=py
 endif
 
-.PHONY: venv install runserver clean freeze
+.PHONY: venv install runserver clean freeze lint
 # Create virtual environment
 venv:
 	 $(PY) -m venv $(VENV)
@@ -33,6 +33,9 @@ clean:
 freeze:
 	$(SOURCE) && pip freeze > requirements.txt
 
+lint:
+	@echo "Linting ✨"
+	flake8
 # Define default target
 .DEFAULT_GOAL := help
 

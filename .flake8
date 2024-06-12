@@ -1,0 +1,9 @@
+[flake8]
+exclude = 
+    .github,
+    __pycache__,
+    ./venv/*,
+    .gitignore
+count = True
+max-doc-length = 79
+max-line-length = 79
